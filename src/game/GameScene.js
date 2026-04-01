@@ -164,13 +164,13 @@ export default class GameScene extends Phaser.Scene {
 
   drawBackground() {
     this.graphics.fillStyle(0x1a1a2e, 1)
-    this.graphics.fillRect(0, 0, 360, ROWS * BLOCK_SIZE)
+    this.graphics.fillRect(0, 0, COLS * BLOCK_SIZE, ROWS * BLOCK_SIZE)
 
     this.graphics.lineStyle(1, 0x2a2a4e, 0.5)
     for (let r = 0; r <= ROWS; r++) {
-      this.graphics.lineBetween(0, r * BLOCK_SIZE, 360, r * BLOCK_SIZE)
+      this.graphics.lineBetween(0, r * BLOCK_SIZE, COLS * BLOCK_SIZE, r * BLOCK_SIZE)
     }
-    for (let c = 0; c <= 12; c++) {
+    for (let c = 0; c <= COLS; c++) {
       this.graphics.lineBetween(c * BLOCK_SIZE, 0, c * BLOCK_SIZE, ROWS * BLOCK_SIZE)
     }
   }

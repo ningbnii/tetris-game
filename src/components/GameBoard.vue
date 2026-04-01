@@ -30,7 +30,7 @@ const initGame = () => {
   const config = {
     type: Phaser.AUTO,
     parent: gameContainerRef.value,
-    width: 360,
+    width: 300,
     height: 600,
     backgroundColor: '#1a1a2e',
     scene: GameScene,
